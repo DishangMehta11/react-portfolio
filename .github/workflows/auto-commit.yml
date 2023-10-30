@@ -1,0 +1,26 @@
+name: Auto Commit to react-portfolio-build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  auto-commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout react-portfolio
+        uses: actions/checkout@v2
+
+      - name: Build Stage
+        run: npm run build
+
+      - name: Commit and push to react-portfolio-build
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Auto Commit Build Files"
+          files: build\
+        env:
+          GITHUB_TOKEN: ${{ secrets.BUILD_TOKEN }}
+
