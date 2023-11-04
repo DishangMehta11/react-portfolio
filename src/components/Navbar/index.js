@@ -43,12 +43,8 @@ const Navbar = () => {
                 <MobileIcon onClick={() => {
                     setIsOpen(!isOpen)
                 }}>
-                    {!isOpen && <FaBars
-                        // onClick={() => {
-                        // 	setIsOpen(!isOpen);
-                        // }}
-                    />}
-                    {isOpen && <IoCloseSharp/>}
+                    {!isOpen && <FaBars />}
+                    {isOpen && <IoCloseSharp />}
                 </MobileIcon>
                 <NavItems>
                     {/*<NavLink href="#about">About</NavLink>*/}

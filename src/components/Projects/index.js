@@ -62,14 +62,14 @@ const Projects = ({openModal, setOpenModal}) => {
                             value="machine learning"
                             onClick={() => setToggle("machine learning")}
                         >
-                            MACHINE LEARNING
+                            ML/AI
                         </ToggleButton>
                     ) : (
                         <ToggleButton
                             value="machine learning"
                             onClick={() => setToggle("machine learning")}
                         >
-                            MACHINE LEARNING
+                            ML/AI
                         </ToggleButton>
                     )}
                 </ToggleButtonGroup>
