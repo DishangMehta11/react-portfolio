@@ -11,16 +11,28 @@ jobs:
 
     steps:
       - name: Checkout react-portfolio
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
+        with:
+          repository: react-portfolio-build
+          ref: master
+          token: ${{ secrets.BUILD_TOKEN }}
+
+      - name: setup git config
+        run: |
+          git config user.name "Github Actions Bot"
+          git config user.email "dishangmehta11@gmail.com"
+          
 
       - name: Build Stage
         run: "npm install && npm run build"
 
-      - name: Commit and push to react-portfolio-build
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: "Auto Commit Build Files"
-          files: build\
-        env:
-          GITHUB_TOKEN: ${{ secrets.BUILD_TOKEN }}
+      - run: git push origin master
+
+      # - name: Commit and push to react-portfolio-build
+      #   uses: stefanzweifel/git-auto-commit-action@v5
+      #   with:
+      #     commit_message: "Auto Commit Build Files"
+      #     files: build\
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.BUILD_TOKEN }}
 
