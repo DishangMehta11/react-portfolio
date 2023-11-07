@@ -26,3 +26,6 @@ yarn-error.log*
 .dockerignore
 docker-compose.yml
 Dockerfile
+
+dishang-mehta-logo-zip-file.zip
+dishang-mehta-logo-zip-file
