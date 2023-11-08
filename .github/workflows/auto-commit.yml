@@ -26,7 +26,20 @@ jobs:
       - name: Build Stage
         run: "npm install && npm run build"
 
-      - run: git push origin master
+      - name: Deploy to react-portfolio-build
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.REACT_PORTFOLIO_BUILD_ACCESS_TOKEN }}
+        
+        with:
+          source-directory: build/
+          destination-github-username: dishangmehta11
+          destination-repository-name: react-portfolio-build
+          user-email: dishangmehta11@gmail.com
+        
+      - name: Test get variable exported by push-to-another-repository
+        run: echo $DESTINATION_CLONED_DIRECTORY
+      # - run: git push origin master
 
       # - name: Commit and push to react-portfolio-build
       #   uses: stefanzweifel/git-auto-commit-action@v5
