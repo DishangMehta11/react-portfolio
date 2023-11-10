@@ -15,7 +15,7 @@ jobs:
         with:
           repository: dishangmehta11/react-portfolio-build
           ref: master
-          token: ${{ secrets.BUILD_TOKEN }}
+          # token: ${{ secrets.REACT_PORTFOLIO_BUILD_ACCESS_TOKEN }}
 
       - name: setup git config
         run: |
