@@ -33,7 +33,7 @@ jobs:
         
         with:
           source-directory: build/
-          destination-github-username: dishangmehta11
+          destination-github-username: DishangMehta11
           destination-repository-name: react-portfolio-build
           user-email: dishangmehta11@gmail.com
         
