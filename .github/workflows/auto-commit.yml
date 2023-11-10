@@ -13,7 +13,7 @@ jobs:
       - name: Checkout react-portfolio
         uses: actions/checkout@v4
         with:
-          repository: dishangmehta11/react-portfolio-build
+          repository: DishangMehta11/react-portfolio-build
           ref: master
           # token: ${{ secrets.REACT_PORTFOLIO_BUILD_ACCESS_TOKEN }}
 
