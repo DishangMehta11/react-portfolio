@@ -178,7 +178,7 @@ export const skills = [
 			{
 				name: "Postman",
 				image:
-					"https://worldvectorlogo.com/download/postman.svg",
+					"https://res.cloudinary.com/postman/image/upload/t_team_logo/v1635105764/team/4c318dd1a76dc2ab12c3b02bbabb898573b80e4584c2437fbd29510a02101a7a?fp=1635105763797",
 			},
 			// {
 			// 	name: "Adobe XD",
