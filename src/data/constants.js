@@ -18,7 +18,7 @@ import nodeSVG from "../Assets/Skills/node.svg";
 // import expressSVG from "../Assets/Skills/express.png";
 import reactSVG from "../Assets/Skills/react.svg";
 import dockerSVG from "../Assets/Skills/docker.svg";
-import githubPNG from "../Assets/Skills/GitHub.png";
+import githubPNG from "../Assets/Skills/github-mark.svg";
 import postmanSVG from "../Assets/Skills/postman.svg";
 
 export const Bio = {
