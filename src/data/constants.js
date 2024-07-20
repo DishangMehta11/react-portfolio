@@ -19,6 +19,7 @@ import nodeSVG from "../Assets/Skills/node.svg";
 import reactSVG from "../Assets/Skills/react.svg";
 import dockerSVG from "../Assets/Skills/docker.svg";
 import githubPNG from "../Assets/Skills/GitHub.png";
+import postmanSVG from "../Assets/Skills/postman.svg";
 
 export const Bio = {
 	name: "Dishang Mehta",
@@ -177,8 +178,7 @@ export const skills = [
 			},
 			{
 				name: "Postman",
-				image:
-					"https://res.cloudinary.com/postman/image/upload/t_team_logo/v1635105764/team/4c318dd1a76dc2ab12c3b02bbabb898573b80e4584c2437fbd29510a02101a7a?fp=1635105763797",
+				image: postmanSVG,
 			},
 			// {
 			// 	name: "Adobe XD",
