@@ -90,7 +90,8 @@ export const skills = [
 		skills: [
 			{
 				name: "Node Js",
-				image: nodeSVG,
+				image: "https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg",
+					//nodeSVG,
 			},
 			{
 				name: "Express Js",
