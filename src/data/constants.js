@@ -12,7 +12,7 @@ import ComingSoon from "../Assets/Projects/ComingSoon.jpg";
 
 // Skills Assets
 import pythonSVG from "../Assets/Skills/python.svg";
-import mysqlSVG from "../Assets/Skills/mysql.svg";
+// import mysqlSVG from "../Assets/Skills/mysql.svg";
 import mongoDBSVG from "../Assets/Skills/mongodb.svg";
 // import nodeSVG from "../Assets/Skills/node.svg";
 import expressSVG from "../Assets/Skills/express.svg";
@@ -109,7 +109,7 @@ export const skills = [
 			},
 			{
 				name: "MySQL",
-				image: mysqlSVG,
+				image: "https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg",
 			},
 			{
 				name: "Postgresql",
