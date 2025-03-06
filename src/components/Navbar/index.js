@@ -58,7 +58,7 @@ const Navbar = () => {
 					<NavLink href="#experience">Experience</NavLink>
 					<NavLink href="#projects">Projects</NavLink>
 					<NavLink href="#education">Education</NavLink>
-					<NavLink href="#contact">Contact</NavLink>
+					<NavLink href="mailto:contact@dishangmehta.me">Contact</NavLink>
 				</NavItems>
 				<ButtonContainer>
 					<GitHubButton href={Bio.github} target="_blank">
@@ -100,7 +100,7 @@ const Navbar = () => {
 							Education
 						</MobileLink>
 						<MobileLink
-							href="#contact"
+							href="mailto:contact@dishangmehta.me"
 							onClick={() => {
 								setIsOpen(!isOpen);
 							}}
