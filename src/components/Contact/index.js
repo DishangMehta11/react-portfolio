@@ -4,6 +4,7 @@ import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { Snackbar } from "@mui/material";
 import "../../App.css";
+import { NavLink } from "../Navbar/NavbarStyledComponent";
 
 const Container = styled.div`
 	display: flex;
@@ -147,7 +148,7 @@ const Contact = () => {
 			)
 			.then(
 				(result) => {
-		setOpen(true);
+					setOpen(true);
 					form.current.reset();
 				},
 				(error) => {
@@ -161,7 +162,8 @@ const Contact = () => {
 			<Wrapper>
 				<Title>Contact</Title>
 				<Desc>
-					Feel free to reach out to me for any questions or opportunities!
+					Feel free to reach out to me via this form or directly contact me at{" "}
+					<NavLink href="mailto:contact@dishangmehta.me">contact@dishangmehta.me</NavLink>
 				</Desc>
 				<ContactForm ref={form} onSubmit={handleSubmit}>
 					<ContactTitle>Email Me 🚀</ContactTitle>

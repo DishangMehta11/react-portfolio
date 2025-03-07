@@ -10,15 +10,44 @@
 			content="Web site created using create-react-app"
 		/>
 		<!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /> -->
-		<link rel="icon" type="image/png" sizes="32x32" href="./logo-no-background.svg" />
-		<link rel="icon" type="image/png" sizes="16x16" href="./logo-no-background.svg" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./logo-no-background.svg"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./logo-no-background.svg"
+		/>
 		<!-- <link rel="manifest" href="/site.webmanifest" /> -->
 
 		<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
 		<title>Dishang Mehta - Portfolio</title>
+		<script
+			src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback"
+			defer
+		>
+			window.onloadTurnstileCallback = function () {
+			turnstile.render("#cloudflare-captcha", {
+			  sitekey: "0x4AAAAAAA_vLnQAm7WNEHg2",
+			  callback: function (token) {
+				console.log(`Challenge Success ${token}`);
+				setTimeout(() => {
+					document.querySelector("#root").style.display = "flex";
+					document.getElementById("cloudflare-captcha").style.display = "none";
+				}, 2000)
+			  },
+			});
+			 };
+		</script>
+
 	</head>
 	<body>
+		<div class="cloudflare-captcha"></div>
 		<noscript>You need to enable JavaScript to run this app.</noscript>
 		<div id="root"></div>
 	</body>
