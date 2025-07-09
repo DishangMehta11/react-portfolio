@@ -19,8 +19,7 @@ import expressSVG from "../Assets/Skills/express.svg";
 import reactSVG from "../Assets/Skills/react.svg";
 import dockerSVG from "../Assets/Skills/docker.svg";
 import githubPNG from "../Assets/Skills/github-mark-white.svg";
-import postmanSVG from "../Assets/Skills/postman.svg";
-
+import postmanSVG from "../Assets/Skills/postman.svg"
 export const Bio = {
 	name: "Dishang Mehta",
 	roles: ["Programmer", "Data Scientist", "Java Developer"],

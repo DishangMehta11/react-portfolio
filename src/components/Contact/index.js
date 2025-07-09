@@ -163,7 +163,9 @@ const Contact = () => {
 				<Title>Contact</Title>
 				<Desc>
 					Feel free to reach out to me via this form or directly contact me at{" "}
-					<NavLink href="mailto:contact@dishangmehta.me">contact@dishangmehta.me</NavLink>
+					<NavLink href="mailto:contact@dishangmehta12.me">
+						contact@dishangmehta12.me
+					</NavLink>
 				</Desc>
 				<ContactForm ref={form} onSubmit={handleSubmit}>
 					<ContactTitle>Email Me 🚀</ContactTitle>
@@ -171,6 +173,7 @@ const Contact = () => {
 					<ContactInput required placeholder="Your Name" name="from_name" />
 					<ContactInput required placeholder="Subject" name="subject" />
 					<ContactInputMessage placeholder="Message" rows="4" name="message" />
+					<div id="cf-turnstile" data-sitekey="0x4AAAAAAA_vLnQAm7WNEHg2"></div>
 					<ContactButton type="submit" value="Send" />
 				</ContactForm>
 				<Snackbar

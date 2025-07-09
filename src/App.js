@@ -37,7 +37,7 @@ const Wrapper = styled.div`
 function App() {
 	const darkMode = true;
 	const [openModal, setOpenModal] = useState({ state: false, project: null });
-	console.log(openModal);
+	// console.log(openModal);
 	return (
 		<ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
 			<Router>

@@ -93,7 +93,7 @@ function Footer() {
 					<NavLink href="#experience">Experience</NavLink>
 					<NavLink href="#projects">Projects</NavLink>
 					<NavLink href="#education">Education</NavLink>
-					<NavLink href="mailto:contact@dishangmehta.me">Contact</NavLink>
+					<NavLink href="mailto:contact@dishangmehta12.me">Contact</NavLink>
 				</Nav>
 				<SocialMediaIcons>
 					<SocialMediaIcon href={Bio.facebook} target="display">

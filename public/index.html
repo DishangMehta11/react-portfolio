@@ -27,14 +27,13 @@
 		<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
 		<title>Dishang Mehta - Portfolio</title>
-		<script
+		<!-- <script
 			src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback"
-			defer
 		>
 			window.onloadTurnstileCallback = function () {
 			turnstile.render("#cloudflare-captcha", {
 			  sitekey: "0x4AAAAAAA_vLnQAm7WNEHg2",
-			  callback: function (token) {
+			  callba\ck: function (token) {
 				console.log(`Challenge Success ${token}`);
 				setTimeout(() => {
 					document.querySelector("#root").style.display = "flex";
@@ -43,12 +42,34 @@
 			  },
 			});
 			 };
+		</script> -->
+		<script
+			src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback"
+			defer
+		>
+			// if using synchronous loading, will be called once the DOM is ready
 		</script>
-
 	</head>
 	<body>
-		<div class="cloudflare-captcha"></div>
 		<noscript>You need to enable JavaScript to run this app.</noscript>
 		<div id="root"></div>
+		<!-- <div id="cloudflare-captcha"></div> -->
+
+		<script>
+			function onloadTurnstileCallback() {
+				turnstile.render("cf-turnstile", {
+					sitekey: "0x4AAAAAAA_vLnQAm7WNEHg2",
+					theme: "dark",
+				});
+			}
+			// turnstile.ready(function () {
+			// 	turnstile.render("#cloudflare-captcha", {
+			// 		sitekey: "0x4AAAAAAA_vLnQAm7WNEHg2",
+			// 		callback: function (token) {
+			// 			console.log(`Challenge Success ${token}`);
+			// 		},
+			// 	});
+			// });
+		</script>
 	</body>
 </html>
