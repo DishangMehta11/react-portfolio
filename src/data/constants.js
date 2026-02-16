@@ -239,7 +239,7 @@ export const experiences = [
 		role: "System Engineer",
 		company: "Tata Consultancy Services Pvt. Ltd.",
 		date: "Nov 2023 - Sept 2025",
-		desc: "● Developed and optimized over 15+ RESTful APIs using Java and Spring Boot, improving backend performance and responsiveness.\n● Troubleshot and resolved production-level issues, enhancing application uptime, system stability, and overall system reliability.\n● Built reusable backend modules using MVC architecture, improving maintainability and reducing redundant code.\n● Used SVN for version control, managing code changes and ensuring smooth collaboration within the team.\n● Worked with MySQL databases to generate business reports, supporting operational and analytical needs.",
+		desc: "Developed and optimized over 15+ RESTful APIs using Java and Spring Boot, improving backend performance and responsiveness. Troubleshot and resolved production-level issues, enhancing application uptime, system stability, and overall system reliability. Built reusable backend modules using MVC architecture, improving maintainability and reducing redundant code. Used SVN for version control, managing code changes and ensuring smooth collaboration within the team. Worked with MySQL databases to generate business reports, supporting operational and analytical needs.",
 		// skills: ["SAS Studio", "SAS Enterprise", "Banking Services"],
 		// doc: TCSCerti,
 	},
@@ -249,7 +249,7 @@ export const experiences = [
 		role: "Software Developer",
 		company: "Freelancer",
 		date: "Oct 2025 - Dec 2025",
-		desc: "● Built secure, stateless authentication and authorization using Spring Security, Google OAuth2 via Google Cloud Platform (GCP) APIs, and JWT, enabling seamless login with Google accounts and scalable session management.\n● Implemented CRUD operations for patient profiles and follow-up sessions, with image upload and retrieval through Cloudinary.\n● Deployed the React.js frontend as a static site on Render and Spring Boot backend as a containerized web service, using Docker by setting up a Continuous Integration/Continuous Delivery (CI/CD) pipeline using GitHub actions to automate deployment workflow on Render using webhooks.\n● Engaged directly with client to gather requirements, served as sole developer - responsible for end-to-end architecture,development, deployment, and automation ensuring timely project delivery.",
+		desc: "● Built secure, stateless authentication and authorization using Spring Security, Google OAuth2 via Google Cloud Platform (GCP) APIs, and JWT, enabling seamless login with Google accounts and scalable session management. Implemented CRUD operations for patient profiles and follow-up sessions, with image upload and retrieval through Cloudinary. Deployed the React.js frontend as a static site on Render and Spring Boot backend as a containerized web service, using Docker by setting up a Continuous Integration/Continuous Delivery (CI/CD) pipeline using GitHub actions to automate deployment workflow on Render using webhooks. Engaged directly with client to gather requirements, served as sole developer - responsible for end-to-end architecture,development, deployment, and automation ensuring timely project delivery.",
 	},
 ];
 
