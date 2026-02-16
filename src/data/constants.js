@@ -16,7 +16,7 @@ import pythonSVG from "../Assets/Skills/python.svg";
 // import mysqlSVG from "../Assets/Skills/mysql.svg";
 import mongoDBSVG from "../Assets/Skills/mongodb.svg";
 // import nodeSVG from "../Assets/Skills/node.svg";
-import expressSVG from "../Assets/Skills/express.svg";
+// import expressSVG from "../Assets/Skills/express.svg";
 import reactSVG from "../Assets/Skills/react.svg";
 import dockerSVG from "../Assets/Skills/docker.svg";
 import githubPNG from "../Assets/Skills/github-mark-white.svg";
