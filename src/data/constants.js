@@ -10,6 +10,7 @@ import PortfolioWebsite from "../Assets/Projects/PortfolioWebsite.png";
 import QRCodeWebsite from "../Assets/Projects/QRCodeWebsite.png";
 import MovieRecommendorWebsite from "../Assets/Projects/MovieRecommendorWebsite.png";
 import ComingSoon from "../Assets/Projects/ComingSoon.jpg";
+import GulabClinic from "../Assets/Projects/GulabClinic.png";
 
 // Skills Assets
 import pythonSVG from "../Assets/Skills/python.svg";
@@ -316,10 +317,21 @@ export const projects = [
 		],
 		category: "web app",
 		github: "https://github.com/DishangMehta11/react-portfolio",
-		webapp: "https://dishangmehta11.me",
+		webapp: "https://dishangmehta12.me",
 	},
 	{
 		id: 0,
+		title: "Patient Management System",
+		description:
+			"A full-stack CRUD application built using Spring Boot and React for managing clinic operations. The system maintains patient profiles, visit records, and associated medical images. It provides quick search and structured record-keeping, helping the doctor track patient history and follow-ups efficiently. The project was developed for a real client and is actively used in a clinic environment.",
+		image: GulabClinic,
+		tags: ["Spring Boot", "React", "MySQL", "Cloudinary"],
+		category: "web app",
+		github: "https://github.com/DishangMehta11/GulabClinicV1",
+		webapp: "https://gulabclinic.dishangmehta12.me",
+	},
+	{
+		id: 1,
 		title: "Custom QR Generator",
 		description:
 			"This is a basic flask web application which can help you create your own custom QR Codes with custom parameters such as error correction, box sizing, colors and more.",
@@ -330,7 +342,7 @@ export const projects = [
 		webapp: "https://dishangmehta11.pythonanywhere.com/",
 	},
 	{
-		id: 1,
+		id: 2,
 		title: "Movie Recommender System",
 		description:
 			"Movie Recommender System using Machine Learning and streamlit for the website creation",
@@ -341,7 +353,7 @@ export const projects = [
 		webapp: "https://github.com/DishangMehta11/Movie-Recommendation-System/",
 	},
 	{
-		id: 2,
+		id: 3,
 		title: "Virtual Painter",
 		description:
 			"A Virtual Painter! Just grab a normal camera and start painting with your finger itself. Forget the hassle of mouse and costly wacoms. Just start paining with your finger",
