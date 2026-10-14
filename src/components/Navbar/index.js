@@ -100,7 +100,7 @@ const Navbar = () => {
 							Education
 						</MobileLink>
 						<MobileLink
-							href="mailto:contact@dishangmehta12.me"
+							href={"mailto:" + Bio.email}
 							onClick={() => {
 								setIsOpen(!isOpen);
 							}}

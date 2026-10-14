@@ -39,6 +39,7 @@ export const Bio = {
 	linkedin: "https://www.linkedin.com/in/dishang-mehta/",
 	twitter: "https://twitter.com/dmehta624",
 	insta: "https://www.instagram.com/dishang_mehta11/",
+	email: "contact@portfolio.dishangmehta12.me",
 };
 
 export const skills = [

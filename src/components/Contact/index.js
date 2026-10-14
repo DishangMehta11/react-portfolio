@@ -5,6 +5,7 @@ import emailjs from "@emailjs/browser";
 import { Snackbar } from "@mui/material";
 import "../../App.css";
 import { NavLink } from "../Navbar/NavbarStyledComponent";
+import { Bio } from "../../data/constants";
 
 const Container = styled.div`
 	display: flex;
@@ -144,7 +145,7 @@ const Contact = () => {
 				"service_rl082ai",
 				"template_m8xtork",
 				form.current,
-				"05K-5QRWK0HOnRast"
+				"05K-5QRWK0HOnRast",
 			)
 			.then(
 				(result) => {
@@ -153,7 +154,7 @@ const Contact = () => {
 				},
 				(error) => {
 					console.log(error.text);
-				}
+				},
 			);
 	};
 
@@ -163,9 +164,7 @@ const Contact = () => {
 				<Title>Contact</Title>
 				<Desc>
 					Feel free to reach out to me via this form or directly contact me at{" "}
-					<NavLink href="mailto:contact@dishangmehta12.me">
-						contact@dishangmehta12.me
-					</NavLink>
+					<NavLink href={"mailto:" + Bio.email}>{Bio.email}</NavLink>
 				</Desc>
 				<ContactForm ref={form} onSubmit={handleSubmit}>
 					<ContactTitle>Email Me 🚀</ContactTitle>
